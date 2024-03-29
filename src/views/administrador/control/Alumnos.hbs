@@ -1,0 +1,43 @@
+ <link rel="stylesheet" href="/Registros/registrosStyle.css">
+<title>Registros Alumnos</title>
+</head>
+    {{> header}}
+    <div class="contenedor-home" id="contenedor-home">
+      <h1>Alumnos</h1>
+      <div class="btn-section">
+          <div class="btn-section1">
+              <caption>Filtrar: </caption>
+              <input type="text" class="form-control" id="filtro" placeholder="Ingresa busqueda"  >
+              <select id="seleccionar-columna">
+                  <option value="0">ID</option>
+                  <option value="1">NOMBRE 1</option>
+                  <option value="2">NOMBRE 2</option>
+                  <option value="3">NOMBRE 3</option>
+                  <option value="4">NOMBRE 4</option>
+              </select>
+          </div>
+          
+          <a class="btn-agregar" href="Registrar.html">+ Agregar</a>
+      </div>
+      <div class="table-responsive">
+          
+         
+          <table class="table" id="tabla-registros">
+              <thead class="head">
+                  <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">NOMBRE 1</th>
+                      <th scope="col">NOMBRE 2</th>
+                      <th scope="col">NOMBRE 3</th>
+                      <th scope="col">NOMBRE 4</th>
+                      <th scope="col">ACCION</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Aquí van las filas de la tabla -->
+              </tbody>
+          </table>
+      </div>
+  </div>
+  <script src="/Registros/registros.js"></script>
+{{> footer}}

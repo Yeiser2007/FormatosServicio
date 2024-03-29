@@ -1,0 +1,79 @@
+
+
+/* heda-fin */
+.contenedor-home h1{
+    font-size: 50px;
+    text-align: center;
+    color: #0F9815;
+    font-family: 'Poppins';
+}
+
+.btn-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btn-section1{
+    display: flex;
+}
+.btn-agregar{
+ background-color: #0F9815;
+ color: #fff;
+ text-decoration: none;
+ font-weight: 600;
+ width: 100px;
+ height: 40px;
+ padding: .5rem;
+ border-radius: 20px;
+}
+.contenedor-home{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 5rem auto;
+    flex: 1;
+    background-color: #fff;
+}
+
+.table thead{
+    text-align: center;
+    background-color: #0F9815;
+    color: #fff;
+
+}
+.table{
+    margin-top: 1rem;
+    border: 2px solid ;
+    text-align: center;
+
+}
+.table th{
+    border: 1px solid #000;
+}
+.table-responsive{
+    width: 100%;
+
+}
+
+.btn{
+    border: none;
+}
+
+.btn i:hover{
+    color: #0F9815;
+}
+.entrada{
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: none;
+}
+.entrada:focus{
+    outline: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    background: none;
+}

@@ -1,0 +1,79 @@
+   <link href="../ajustes/ajustesStyle.css" rel="stylesheet">
+   <title>Ajustes</title>
+{{> header}}
+<div class="container">
+        <div class="row">
+            <div class="Perfil col-md-4 mb-4">
+                <h2>Perfil</h2>
+                <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Foto de perfil"
+                    class="img-fluid rounded-circle">
+            </div>
+            <div class="datauser col-md-8">
+                <h2>Nombre del Usuario</h2>
+                <form id="formulario" class="col-12" action="/Vistas/Informacion.html" method="get">
+                    <div class="form-group row">
+                        <label for="correo" class="col-md-4 col-12"><i class="fa fa-envelope"></i> Correo Electrónico:</label>
+                        <div class="col-md-8 col-12">
+                            <input type="email" class="form-control" id="correo" name="correo" value="usuario@example.com" required readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="usuario" class="col-md-4 col-12"><i class="fa fa-user"></i> Nombre de Usuario:</label>
+                        <div class="col-md-8 col-12">
+                            <input type="text" class="form-control" id="usuario" name="usuario" value="usuario123" required readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fechaNacimiento" class="col-md-4 col-12"><i class="fa fa-birthday-cake"></i> Fecha de Nacimiento:</label>
+                        <div class="col-md-8 col-12">
+                            <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" value="1990-01-01" required disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="nacionalidad" class="col-md-4 col-12"><i class="fa fa-flag"></i> Nacionalidad:</label>
+                        <div class="col-md-8 col-12">
+                            <input type="text" class="form-control" id="nacionalidad" name="nacionalidad" value="México" required disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telefono" class="col-md-4 col-12"><i class="fa fa-phone"></i> Teléfono:</label>
+                        <div class="col-md-8 col-12">
+                            <input type="tel" class="form-control" pattern="[0-9]{10}" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class=" contra col-12">Para cambiar tu contraseña da click -> <a href="#" onclick="abrirTarjeta()">aqui</a></label>
+                    </div>
+                    <div class="botones">
+                        <div class="boton">
+                            <input type="button" id="btn1" class="btn btn-primary" value="Editar">
+                        </div>
+                        <div class="boton">
+                            <input type="button" id="btn2" class="btn btn-primary" value="Guardar" disabled>
+                        </div>
+                    </div>
+                </form>
+            
+            </div>
+
+
+        </div>
+    </div>
+        <div id="overlay" class="overlay">
+        <div class="tarjeta">
+            <span class="cerrar" onclick="cerrarTarjeta()">&times;</span>
+            <h2>Cambiar Contraseña</h2>
+            <form onsubmit="return cambiarContraseña()">
+                <label for="contraseñaActual">Contraseña Actual:</label>
+                <input type="password" id="contraseñaActual" required>
+                <label for="nuevaContraseña">Nueva Contraseña:</label>
+                <input type="password" id="nuevaContraseña" required>
+                <label for="confirmarContraseña">Confirmar Contraseña:</label>
+                <input type="password" id="confirmarContraseña" required>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+{{> footer}}
+<script src="../ajustes/informacion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Poppins:wght@200&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton&family=Kenia&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+
+    font-size: 16px;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    scroll-padding-top: 2rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: url('../Imagenes/asfalt-dark.png');
+    flex: 1;
+}
+
+.navbar {
+    width: 100%;
+    height: 4rem;
+    padding: 0px;
+    background-color: #fff;
+    border-bottom: 2px solid #9c8412;
+    z-index: 3;
+    position: fixed;
+}
+
+.navbar .navbar-brand {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.logo {
+    max-width: 10vh;
+    height: auto;
+    padding: 0px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+}
+
+.collapse {
+    justify-content: end;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    height: auto;
+    text-align: start;
+
+}
+
+.collapse>.navbar-nav>.nav-item>.nav-link {
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+.collapse>.navbar-nav>.nav-item>.nav-link:hover {
+    text-decoration: underline solid #9bbb0d 3px;
+    color: #235831;
+    transition: .5s;
+}
+
+.dropdown-menu.show li a {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el contenido */
+}
+
+.dropdown-item {
+    width: 100%;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline solid #9bbb0d 3px;
+    color: #235831;
+    transition: .5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.nav-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: .2rem 1rem;
+    align-items: center;
+    background-color: #235831;
+}
+
+.nav-h p {
+    margin: 0;
+    color: #fff;
+}
+
+.icon {
+    margin: 5px;
+    color: #fff;
+}
+
+.bi-person-circle {
+    margin: 0 auto;
+}
+
+.vianco {
+    margin: 1rem 0rem;
+    color: #fff;
+}
+
+.vianco a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #235831;
+    text-align: center;
+}
+
+@media(max-width:767px) {
+    .submenu-dr li{
+        margin-left: 2rem;
+    }
+    .dropdown-submenu .show li a {
+        margin-left: 3rem;
+    }
+    .dropdown-menu-end{
+        border: none;
+    }
+}
